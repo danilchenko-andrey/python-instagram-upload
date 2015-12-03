@@ -5,19 +5,6 @@ import codecs
 import instagram
 
 
-# def upload(filepath, comment_fd):
-#     print "Uploading " + filepath
-#     insta = InstagramSession()
-#     if insta.login("mir_nomer_nol", "phivee6ooKohfei"):
-#         media_id = insta.upload_photo(filepath)
-#         print media_id
-#         if media_id is not None:
-#             text = u""
-#             for line in comment_fd:
-#                 text += line
-#             insta.configure_photo(media_id, text)
-
-
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('image', help='Square preconverted image')
